@@ -5,7 +5,13 @@ int arr[SIZE];
 
 void insert(int location, int data)
 {
-    //
+    int index = location - 1; 
+
+    for(int i=SIZE-1; i>index; i--){
+        arr[i] = arr[i-1];
+    }
+
+    arr[index] = data; 
 }
 
 void display()

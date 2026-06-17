@@ -1,0 +1,72 @@
+DS : Algo 
+DSA 
+
+                            Data Structure 
+    Linear DS                                       NoN Linear DS
+    Array                                           Tree
+    Stack                                           Graph
+    Queue 
+    LinkedList 
+
+
+   *Searching 
+   *Sorting 
+
+--------------------------------------------------------------------------------------------
+
+1) Space Complexity { space occupied by program}
+2) Time Complexity  { number of instructions }
+
+
+#define SIZE 15 
+
+void main(){
+    
+    int a[SIZE]; 
+
+    for(int i=0;i<SIZE;i++){
+        printf("Enter value");
+        scanf("%d",&a[i]);
+    }
+
+}
+
+
+SIZE        :   4 byte 
+a[SIZE]     :   20 byte 
+i           :   4 byte 
+--------------------------
+            28 byte * 100000
+
+SIZE 5          15  
+
+1 time          1 time     
+5 time          15
+-------         -----
+6 time          16  
+
+-----------------------------------------------------------------------
+
+
+
+Array : collection of n number of items 
+        collection of n number of items under single data name 
+        similar data type 
+        continue memory allocation 
+
+    : is a collection of same type of data type having continue memory allocation 
+
+25 
+50 
+
+int arr[5]; 
+
+array can be access via index 
+a[0] a[1].... a[4]
+
+index starts with 0 and ends with SIZE-1 
+
+[] dm 
+1D 
+2D 
+MD 

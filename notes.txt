@@ -70,3 +70,124 @@ index starts with 0 and ends with SIZE-1
 1D 
 2D 
 MD 
+
+
+------------------------------------------------------------------------------------
+
+notation --> 
+
+1)  Big O --> O-notation ---> Upper Bound  : Worst case 
+2)  Omega --> Ω-Notation ---> Lower Bound  : Best Case 
+3)  Theta --> Θ-Notation ---> T : Avg Case 
+
+
+void display()
+{
+    printf("\nElements in the Array: ");
+    for (int i = 0; i < SIZE; i++)
+    {
+        printf(" %d", arr[i]);
+    }
+}
+SIZE        
+5           5
+10          10
+20          20
+
+SIZE 
+
+O(n) 
+
+------------------------------------------------------
+
+  
+for(i=1;i<=size;i++){ // 
+    for(j=1;j<=size;j++){ // 
+        printf(" %d",j);
+    }
+    printf("\n");
+}
+
+SIZE * SIZE 
+
+O(n*n) 
+O(n^2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+for(i=1;i<=size;i++){ //n 
+    for(j=1;j<=size - i;j++){ //n-1 
+        printf("hi ");
+    }
+} 
+
+n*n 
+
+
+10 
+1   9
+2   8
+3   7
+10  0
+n * n  - i 
+
+O(n*n)
+
+
+------------------------------------------------------------------------------
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= i; j++) {
+        printf("*");
+    }
+}
+n * n  
+
+O(n^2)
+n*n
+
+ 
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= i * i; j++) {
+        printf("*");
+    }
+} 
+
+n * n * n
+
+
+
+for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j = j * 2) {
+        printf("*");
+    }
+}
+ 
+n * log n
+
+O( n log n)
+
+
+
+------------------------------------------------------------------------------
+
+
+
+
+

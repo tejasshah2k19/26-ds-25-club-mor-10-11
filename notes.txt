@@ -186,8 +186,56 @@ O( n log n)
 
 
 ------------------------------------------------------------------------------
+Array 
+
+Stack : LiFO 
+        Last In First OUT 
+
+plates ---> 
+
+whatsapp ===> chat ==> 
+Gallery => 1-1-2024   : 
+           24-06-2024 :
+
+Search History --- call logs --- browser --->
 
 
 
+insert ---- PUSH 
+remove ---- POP 
+display --- display         
+            PEEK
+            PEEP 
+												
+					4							
+					3							
+					2	30	top					
+					1	20						
+					0	10						
+						stack						
+					-1			i				
+	top	-1	EMPTY									
+												
+												
+								push(10)		top++	stack[ top ] = num 	
+								push(20)		top++	stack[ top ] = num 	
+								push(30)		top++	stack[ top ] = num 	
+												
+								display( )	30		for i=top i>= 0 i--	
+									20		    pf stack[i]	30
+									10			20
+												10
+								push	40			
+												
+								pop()	40			
+								pop()	30			
+												
+								display( )	20			
+									10			
+												
+												
+												
+												
+												
 
 

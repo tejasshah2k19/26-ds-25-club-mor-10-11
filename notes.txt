@@ -234,7 +234,71 @@ display --- display
 									10			
 												
 												
-												
+---------------------------------------------------------------------------
+ALU 
+expression => a+b*c-d/f 
+(()) ([])
+recurssion 
+
+
+a + b
+
++ => operator 
+a => operand 
+
+
+inFix   a + b 
+preFix  +ab 
+postFix ab+ 
+
+
+inFix => preFix 
+inFix => postFix 
+
+
+
+inFix => preFix 
+
+a + b ==> +ab 
+
+
+a + b + c 
++ab + c 
+++abc 
+
+
+a + b * c + d 
+a + *bc + d 
++a*bc + d 
+++a*bcd 
+
+
+a + b * c  - d * f + g
+a + *bc  - d * f + g
+a + *bc  - *df + g
++a*bc - *df + g 
+-+a*bc*df + g 
++-+a*bc*dfg 
+
+
+
+
+a + b * c / d  + f * g / h - p 
+
+
+
+
+a * b * c - d + f / g 
+
+p + q - r * d * f / g 
+
+a + c - d * r * t * g + f - q * z 
+
+a + b + c - d * f * g * h + x 
+ 
+
+
+
 												
 												
 

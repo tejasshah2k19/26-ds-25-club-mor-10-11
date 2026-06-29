@@ -44,7 +44,9 @@ void peek()
 
 void peep(int location){
 
+    //empty 
     int index = top-location + 1;
+    //index 0 >= index <= SIZE-1  
     printf(" %d ",stack[index]); 
 
 }

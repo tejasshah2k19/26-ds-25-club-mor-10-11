@@ -296,6 +296,87 @@ a + c - d * r * t * g + f - q * z
 
 a + b + c - d * f * g * h + x 
  
+-----------------------------------
+
+=>   a + b * c
+=>   ( a + b ) * c 
+
+    a + b 
+    a b => operand 
+    +   => operator 
+
+    a + b => inFix expression 
+    +ab   => preFix 
+    ab+   => postFix 
+
+
+    operator            rank
+    ( )                 1           left to right 
+    % $ ^               2           right to left 
+    / *                 3           left to right
+    +  -                4           left to right 
+
+    operator            rank
+    ( )                 4 
+    % $ ^               3 
+    / *                 2
+    +  -                1
+  
+
+
+
+
+InFix 
+    (a + b ) * (c / d + f) $ G + H $ P 
+preFix -> polish notation 
+    (a + b ) * (c / d + f) $ G + H $ P 
+    +ab  * (c / d + f) $ G + H $ P
+    +ab  *  +/cdf  $ G + H $ P
+    +ab  *  $+/cdfG + $HP
+    *+ab$+/cdfG + $HP
+    +*+ab$+/cdfG$HP
+
+postFix -> reverse polish notation
+     ab+  * (c / d + f) $ G + H $ P 
+     ab+  *  cd/f+  $ G + H $ P 
+     ab+  *  cd/f+G$ + HP$ 
+     ab+cd/f+G$* + HP$ 
+     ab+cd/f+G$*HP$+ 
+     
+     
+     
+---------------------------------------------------------------------------     
+
+A+B*(C^D-E)^(F+G*H)-I
+
+preFix  : -+A*B^-^CDE+F*GHI
+postFix :  ABCD^-EF+GH*^*+I-
+
+
+
+A + B *  ( C ^ D - E ) ^ ( F + G * H ) - I
+prefix : 
+    -+A*B^-^CDE+F*GHI
+
+postFix:
+    ABCD^E-FGH*+^*+I- 
+
+A + B *  ( C ^ D - E ) ^ ( F + G * H ) - I
+A + B *   CD^E-  ^ ( F + G * H ) - I
+A + B *   CD^E-  ^   FGH*+   - I
+A + B *   CD^E-FGH*+^   - I
+ABCD^E-FGH*+^*+I-
+
+------------------------------------------------------------------
+((A+B*C)-(D/E+F)*(G-H/I)+J)^(K+L-M*N)    
+
+prefix :  ^+-+A*BC*+/DEF-G/HIJ-+KL*MN 
+
+postFix:  ABC*+DE/F+GHI/-*-J+KL+MN*-^
+
+
+
+
 
 
 

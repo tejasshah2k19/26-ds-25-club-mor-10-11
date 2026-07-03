@@ -374,6 +374,20 @@ prefix :  ^+-+A*BC*+/DEF-G/HIJ-+KL*MN
 
 postFix:  ABC*+DE/F+GHI/-*-J+KL+MN*-^
 
+------------------------------------------------------------------
+
+int ==> char 
+
+string reverse using stack. 
+
+
+
+Enter the string 
+royal 
+StacK : layor 
+
+------------------------------------------------------------------
+
 
 
 

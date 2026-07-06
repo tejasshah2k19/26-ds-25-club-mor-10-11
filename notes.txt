@@ -388,6 +388,42 @@ StacK : layor
 
 ------------------------------------------------------------------
 
+Stack => import java.util.Stack 
+
+push()
+pop()
+peek()
+size()
+isEmpty()
+
+Stack<Integer> stack = new StacK<>();
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+S.o.p(stack); 
+
+------------------------------------------------------------------
+
+1) take 5 numbers from users , push all to the stack and find out max from it. 
+    10
+    20
+    50
+    40
+    30
+
+    max : 50 
+
+2) take 5 numbers from users , push all to the stack and find out sum of all elements. 
+   10
+   20
+   30
+   40
+   50
+   sum : 150 
+
+
 
 
 

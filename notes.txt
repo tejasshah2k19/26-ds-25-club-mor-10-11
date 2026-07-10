@@ -423,6 +423,20 @@ S.o.p(stack);
    50
    sum : 150 
 
+-------------------------------------------------------------------------------------
+
+simple queue 
+
+queue 
+    fifo 
+        first in first out 
+    fcfs 
+        first come first serve
+
+
+insert ===> enQueue
+remove ===> deQueue 
+display ==> display 
 
 
 

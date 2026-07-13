@@ -5,28 +5,74 @@ int queue[SIZE];
 int front = -1;
 int rear = -1;
 
+int isEmpty()
+{
+    // true : empty
+    // false : not empty
+    if (front == -1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 void enQueue(int data)
 {
 
-    rear++;
-    queue[rear] = data;
-    if (front == -1)
+    if (rear == SIZE - 1)
     {
-        front = 0;
+        printf("\nQueue is Full");
+    }
+    else
+    {
+
+        rear++;
+        queue[rear] = data;
+        if (front == -1)
+        {
+            front = 0;
+        }
     }
 }
 
 void deQueue()
 {
-    printf("\n%d removed",queue[front]);
-    front++; 
+
+    if (isEmpty())
+    {
+        printf("\nQueue is empty ");
+    }
+    else if (front == rear)
+    {
+        printf("\n%d removed", queue[front]);
+
+        front = -1;
+        rear = -1;
+    }
+    else
+    {
+        printf("\n%d removed", queue[front]);
+        front++;
+    }
 }
 
 void display()
 {
-    printf("\nQueue Data : ");
-    for(int i=front;i<=rear;i++){
-        printf(" %d ",queue[i]);
+
+    if (isEmpty())
+    {
+        printf("\nQueue is empty ");
+    }
+    else
+    {
+        printf("\nQueue Data : ");
+        for (int i = front; i <= rear; i++)
+        {
+            printf(" %d ", queue[i]);
+        }
     }
 }
 

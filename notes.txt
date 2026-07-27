@@ -439,6 +439,98 @@ remove ===> deQueue
 display ==> display 
 
 
+-------------------------------------------------------------------------------------
+
+    array => collection of data , same type  
+          => continue 
+          => size Fixed
+
+    size fix 
+        size = 100 , use = 100 , 25 store -> overflow
+        size = 100 , use = 25  , 75 waste -> memory waste 
+
+    solution ?
+
+    [10 20 ]
+    add -> allocate -> grow 
+    remove -> release -> shrink 
+
+    dynamic -> size 
+
+    java-> 
+        ArrayList 
+            1) collection of data -> same as array 
+            2) continue memory -> same as array 
+            3) can access using index -> same as array 
+            4) memory allocate -> dynamic in nature 
+
+    import java.util.ArrayList 
+
+---------------------------------------------------------------------------
+
+LeetCode ==> 
+        target sum => 
+        [1  20 304 10 506 78  9 89 ]  
+        target => 88 
+        true 
+        false 
+
+
+        findTarget(12); => false 
+        findTarget(88); => true 
+
+unsorted :-
+        1  20 304 10 506 78  9 89 
+                                    i     j 
+    boolean findTarget(int targetSum){ 
+        for(i=0;i<list.size();i++){
+            for(j=i+1;j<list.size();j++){
+                if(list.get(i) + list.get(j) == targetSum ){
+                    return true; 
+                }
+            }
+        }
+
+        return false;
+    }
+ 
+ O(n^2)
+
+    sorted :- 
+            1  9 10 20 78 89 304  506 
+            l
+                                  u    
+            targetSum => 88 
+
+
+    boolean findTarget(int targetSum){ 
+    
+        int low = 0;
+        int high = SIZE - 1; 
+
+        while(low <= high ){
+            int sum = arr[low] + arr[high] ; 
+
+            if(sum == targetSum){
+                return true; 
+            }else if(sum > targetSum){
+                high--;
+            }else{
+                low++;
+            }
+        }
+    
+        return false; 
+    }
+
+
+
+
+
+------------------------------------------------------------------------     
+
+
+
 
 
 
@@ -446,5 +538,17 @@ display ==> display
 
 												
 												
+
+
+
+
+
+
+
+
+
+
+
+
 
 

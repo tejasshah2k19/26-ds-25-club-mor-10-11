@@ -529,9 +529,35 @@ unsorted :-
 
 ------------------------------------------------------------------------     
 
+recursion -> function calling itself. 
 
 
+void greet(){
+    printf(" Good morning ");
+}
 
+void print(){
+    print(" Hi ");
+    print();// recursion 
+}
+
+main(){
+
+    //greet();//call 
+
+    print();//call 
+}
+
+
+*infinite 
+*stack overflow 
+
+BASE_CASE -> condition 
+
+
+why? 
+
+---------------------------------------------------------------------------
 
 
 

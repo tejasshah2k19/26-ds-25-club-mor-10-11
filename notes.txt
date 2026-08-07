@@ -559,12 +559,187 @@ why?
 
 ---------------------------------------------------------------------------
 
+#include <stdio.h>
+
+void fun(int n) {
+    if (n == 0)
+        return;
+
+    printf("%d ", n);
+    fun(n - 1);
+}
+
+int main() {
+    fun(5);
+}
+
+
+fun(5) => n : 5 
+    fun(4) => n : 4 
+        fun(3) => 
+            fun(2)  
+                fun(1)
+                    fun(0)
+
+5  4  3  2  1 
 
 
 
+
+
+
+#include <stdio.h>
+
+void fun(int n) {
+    if (n == 0)
+        return;
+
+    fun(n - 1);
+    printf("%d ", n);
+}
+
+int main() {
+    fun(5);
+}
+
+
+
+fun(5)
+    n=>5
+    fun(4) =>   
+    pf(n)       
+                fun(3)
+                    pf(n)
+                            fun(2)
+                                pf(n)
+                                        fun(1)
+                                            pf(n)
+                                                        fun(0)=> X 
+
+1  2  3  4  5 
+
+
+
+
+
+#include <stdio.h>
+
+void fun(int n) {
+    if (n == 0)
+        return;
+
+    printf("%d ", n);
+    fun(n - 1);
+    printf("%d ", n);
+}
+
+int main() {
+    fun(5);
+}
+
+5 4 3 2 1 1 2 3 4 5 
+
+
+#include <stdio.h>
+
+void fun(int n) {
+    if (n <= 0)
+        return;
+
+    printf("%d ", n);
+    fun(n - 2);
+}
+
+int main() {
+    fun(9);
+}
+
+fun(9)
+    fun(7)
+        fun(5)
+            fun(3)
+                fun(1)
+9   7   5   3   1
+
+
+
+
+
+
+#include <stdio.h>
+
+void fun(int n) {
+    if (n <= 1) {
+        printf("%d ", n);
+        return;
+    }
+
+    fun(n - 1);
+    fun(n - 2);
+}
+
+int main() {
+    fun(4);
+}
+
+                fun(4) fn(n-2)
+                    fun(3) fn(n-2)
+                        fun(2)  fn(n-2)
+                            fun1()
+
+                             
+1 0 1 1  0 
+-------------------------------------------------------------------------
+
+
+int a;//variable -> store value 
+
+int *p; //pointer variable -> store address 
+
+sizeof(int) -> 4 2 
+
+
+-------------------------------------------------------------------------
+function 
+pointer
+structure 
+DMA function 
+-------------------------------------------------------------------------
+addition of two numbers using pointer. 
+
+int a =100;
+int b = 200; 
+//pointer -> 
+a+b => wrong 
+
+-------------------------------------------------------------------------
+ 
+name char[]
+maths int 
+sci   int 
+eng   int 
+perc  float 
+grade char 
+
+
+array     : collection of data with same type of data type  
+structure : collection of data having diff type of data type 
+
+
+struct => keyword 
+
+tag name => student 
+
+variable => 
+
+we can access structure's property using dot operator / *arrow operator 
 												
-												
 
+array of structure 
+
+struct student s[5] 
+
+s[0] {name ,..... } s[1]{name......}............s[4]
 
 
 

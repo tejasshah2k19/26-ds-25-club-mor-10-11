@@ -733,13 +733,27 @@ tag name => student
 variable => 
 
 we can access structure's property using dot operator / *arrow operator 
-												
+											
+struct student s; 
+s.name 
+struct student *p;
+p.name   :  compilation error 
+p->name  :  
+
+
 
 array of structure 
 
 struct student s[5] 
 
 s[0] {name ,..... } s[1]{name......}............s[4]
+---------------------------------------------------------------------------------------------------
+char name[30];
+int maths;
+int sci;
+int eng; 
+float perc; 
+char grade; 
 
 
 

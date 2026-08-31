@@ -761,9 +761,69 @@ char grade;
 
 
 
+---------------------------------------------------------------------------------------------------
+
+DMA 
+void add(){ 
+        //implicit 
+        int a; // 4 byte 
+        int x[50];//fix  
+        int z; 
+
+    //X -> 
+        //5 -> +5  -> +5 -> 
+    //+5 -> +5 -> +5 -> -12 
+        //25 -25 
 
 
 
+}// end 
+
+
+memory -> explicit -> 
+
+allocation
+    -- calloc() 
+    -- malloc() 
+
+release 
+    -- free() 
+
+resize 
+    -- realloc() 
+
+
+    a => 25 byte -> malloc --> single 
+    arr => 20 byte -> 5 block -> calloc -> multiple with same size 
+
+stdlib.h 
+
+1) addition of two numbers using DMA 
+
+--------------------------------------------------------------------------
+
+struct student{
+    char name[30];
+    int maths;
+    int sci;
+    int eng;
+    float perc;
+    char grade;
+}
+
+struct student *s; 
+
+s = (struct student*) malloc(sizeof( struct student ));
+
+pf sf 
+
+perc => 
+
+grade => 35+ P  >35 F 
+
+--------------------------------------------------
+
+node --> [  data | next ]
 
 
 

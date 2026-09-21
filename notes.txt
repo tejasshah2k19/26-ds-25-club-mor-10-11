@@ -827,3 +827,77 @@ node --> [  data | next ]
 
 
 
+struct node {
+    int data; 
+    struct node *next;
+};
+
+malloc : block --- single -- cast 
+calloc : multiple block with same size --- continue 
+
+
+linked list -> first -> head , last 
+
+
+how i can figure out i have to create first node?
+
+head == NULL => empty -> first 
+
+
+[  10 | NULL  ]
+     head 
+     last 
+
+
+second node? 
+     newNode = (struct node*) malloc(sizeof(struct node))
+     newNode->data = num 
+     newNode->next = NULL
+     last->next = newNode
+     last = newNode 
+
+
+
+10 -> 20 -> 30 -> 40 -> 50 
+dispay all the node 
+
+
+dispay all the node who has even value 
+struct node *p = head ; 
+
+while(p!=NULL){
+    if(p->data % 2 == 0){
+        printf(" %d ",p->data);
+    }
+    p=p->next; 
+}
+
+-----------------------------
+10->20->30->
+50 begining add 
+-----------------------------------------
+
+
+10  20  30  40  50  
+
+SearchNode(40) : found 
+SearchNode(45) : not found 
+
+1) take 7 numbers from user and insert all in linkelist 
+2) find out sum of all elements of linked list 
+3) find out max element and min element from linked list 
+4) list palindrome ? 
+        list    10 20 30
+        revList 30 20 10 
+        not palindrome 
+        
+        list 10 20 30 20 10 
+        rev 10 20 30 20 10
+        palindrome 
+        get(index) 
+        
+5) Enter the n value from user and remove that nth item from the end 
+        10 20 30 40 50 60 70  
+        n = 2  // remove 2nd last item 
+        10 20 30 40 50  70  
+

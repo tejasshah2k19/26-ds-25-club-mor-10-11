@@ -21,7 +21,7 @@ void addNode(int data)
         head = (struct node *)malloc(sizeof(struct node));
         head->data = data;
         head->next = NULL;
-        last = head; 
+        last = head;
     }
     else
     {
@@ -29,7 +29,32 @@ void addNode(int data)
         tmp->data = data;
         tmp->next = NULL;
         last->next = tmp;
-        last= tmp; 
+        last = tmp;
+    }
+}
+
+void searchNode(int data)
+{
+
+    struct node *tmp = head;
+    int found = 0; // X
+    while (tmp != NULL)
+    {
+        if (tmp->data == data)
+        {
+            found = 1; // Yes
+            break;
+        }
+        tmp = tmp->next;
+    }
+
+    if (found == 1)
+    {
+        printf("\nFound");
+    }
+    else
+    {
+        printf("\nNot found");
     }
 }
 
@@ -41,7 +66,8 @@ int main()
     addNode(30);
     addNode(40);
 
-    printf(" %d %d %d %d", head->data, head->next->data,head->next->next->data,head->next->next->next->data);
+    printf(" %d %d %d %d", head->data, head->next->data, head->next->next->data, head->next->next->next->data);
 
+    searchNode(50);
     return 0;
 }

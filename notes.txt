@@ -901,3 +901,86 @@ SearchNode(45) : not found
         n = 2  // remove 2nd last item 
         10 20 30 40 50  70  
 
+-----------------------------------------------------------------------
+
+Linear DS --> 
+                array 
+                stack 
+                queue 
+                linkedlist 
+
+Non Linear DS --> 
+                Tree 
+                Graph 
+
+
+
+
+----------------------------------------------
+
+total node : 
+root node : 
+parent node of  5 : 
+child node of 3 : 
+sibling at level 2: 
+leaf node :
+height : 
+level : 
+
+
+Binary Tree : max 2 child 
+
+
+BST -> Binary Search Tree -> 
+            1) i am a Binary tree {max : 2 child }
+            2) child > parent --> right 
+            3) child < parent --> left 
+
+
+    90  60  120
+BST 
+
+                90
+            60      120 
+
+
+BST
+90 60 120 70 55 100 150 
+
+--------------------------------------------------------------------------------------------------
+
+TRee --> H 
+
+                             Node 
+                    Left               Right 
+
+Binary Tree --->  Max 2 Child [ 0 1 2 ]
+
+
+90 60 120 70 55 100 150 
+
+Binary Search Tree ---> 
+1)  Max 2 Node 
+2)  child node > parent node : right  
+3)  child node < parent node : left 
+
+
+
+BST
+90 60 120 70 55 100 150 
+
+
+
+-----------------------------------------------------------------------------------------------
+Tree Travesal : print all nodes  / travel 
+
+1) In Order             Left - Root - Right 
+2) Pre Order            Root - Left - Right 
+3) Post Order           Left - Right - Root 
+
+ 
+
+           
+
+
+

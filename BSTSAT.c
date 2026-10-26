@@ -91,7 +91,14 @@ void search(struct node *root, int key)
         }
     }
 }
+struct node* inOrderSuccessor(struct node *root){//90
 
+    if(root!=NULL){
+        inOrderSuccessor(root->left);//90->left 
+    }
+    return root; //90 
+
+}
 struct node *deleteNode(struct node *root, int key) // 150 150
 {
 
@@ -113,14 +120,21 @@ struct node *deleteNode(struct node *root, int key) // 150 150
         {
             // two child
             
+            struct node *newDavedar = inOrderSuccessor(root->right); 
+            printf(" new davedar => %d ",newDavedar->data); 
+            root->data = newDavedar->data; 
+
+            return deleteNode(root->right,root->data);//90
+
         }
         else
         {
             // single child
             if (root->left == NULL)
             {
-                
-                return root->right;
+                struct node *tmp = root->right;
+                free(root);  
+                return tmp;
                 
             }
             else
@@ -170,7 +184,7 @@ int main()
     search(root, 500);
     search(root, 10);
 
-    // deleteNode(root, 30);
+    deleteNode(root, 50);
 
     return 0;
 }

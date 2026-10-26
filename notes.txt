@@ -1138,8 +1138,21 @@ Tree ---->
 
 
     struct 
-    
 
+node 
+
+
+G = {V,E}
+
+undirected 
+directed -- dia graph 
+weighted graph 
+parellal : multi graph 
+self loop : multi graph 
+
+-----------------------------------------------------
+
+tree --> 
 
 
 
